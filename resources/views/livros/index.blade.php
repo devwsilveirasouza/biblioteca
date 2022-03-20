@@ -12,7 +12,7 @@
     <title>Biblioteca</title>
 </head>
 <body>
-<h1>Livros Cadastrados</h1>
+<h1>Listagem dos livros cadastrados</h1>
 
 @if ($status = Session::get('mensagem'))
     <h2> {{ $status }} </h2>
