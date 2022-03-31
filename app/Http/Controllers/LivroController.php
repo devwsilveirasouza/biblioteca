@@ -86,9 +86,10 @@ class LivroController extends Controller
             ->with(['livro' => $livro]);
     }
         // Permite atualizar os dados de um livro
-    public function update(Request $request, Livro $livro)
+    public function update(LivroRequest $request, Livro $livro)
     {
         // Valida os dados vindo do formulário
+        /*
         $request->validate([
             'titulo' => 'required',
            'autor' => 'required',
@@ -98,6 +99,7 @@ class LivroController extends Controller
             'autor.required' => 'Digite um autor',
             'paginas.required' => 'Digite o numero de paginas'
         ]);
+        */
 
         // Atualiza o livro na tabela do banco de dados
         $livro -> update($request->all());
