@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Http\Requests\LivroRequest;
 use App\Models\Livro;
 use Illuminate\Http\Request;
+use RealRashid\SweetAlert\Facades\Alert;
 
 class LivroController extends Controller
 {
